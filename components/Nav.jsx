@@ -25,7 +25,7 @@ const Nav = () => {
             width={30}
             height={30}
             src='/assets/images/logo.svg' />
-            <p className='logo_text'>Promptopia</p>
+            <p className='logo_text'>Prompt Master</p>
         </Link>
 
         {/* Desktop Navigation */}
@@ -33,9 +33,9 @@ const Nav = () => {
             {session?.user ? (
                 <div className='flex gap-3 md:gap-5'>
                     <Link href='/create-prompt' className='black_btn'>
-                        Create Post
+                        投稿
                     </Link>
-                    <button className='outline_btn' onClick={signOut}> Sign Out</button>
+                    <button className='outline_btn' onClick={signOut}>ログアウト</button>
                     <Link href='/profile'>
                         <Image src={session?.user.image} alt='profile' width={37} height={37} className='rounded-full' />
                     </Link>
@@ -46,7 +46,7 @@ const Nav = () => {
                     <button type='button' key={provider.name}
                     onClick={() => signIn(provider.id)}
                     className='black_btn'>
-                        Sign In
+                        ログイン
                     </button>
                 ))}
                 </>
@@ -64,19 +64,19 @@ const Nav = () => {
                         <Link
                         href='/profile' className='dropdown_link'
                         onClick={() => setToggleDropdown(false)}>
-                            My Profile
+                            プロフィール
                         </Link>
                         <Link
                         href='/create-prompt' className='dropdown_link'
                         onClick={() => setToggleDropdown(false)}>
-                            Create Prompt
+                            投稿
                         </Link>
                         <button type='button' onClick={()=>{
                             setToggleDropdown(false);
                             signOut();
                             }}
                             className='mt-5 w-full black_btn'>
-                            Sign Out
+                            ログアウト
                         </button>
                     </div>
                     )}
@@ -87,7 +87,7 @@ const Nav = () => {
                     <button type='button' key={provider.name}
                     onClick={() => signIn(provider.id)}
                     className='black_btn'>
-                        Sign In
+                        ログイン
                     </button>
                 ))}
                 </>

@@ -23,7 +23,7 @@ const MyProfile = () => {
         router.push(`/update-prompt?id=${post._id}`)
     }
     const handleDelete = async (post) => {
-        const hasConfirmed = confirm('Are you sure to delete the prompt?');
+        const hasConfirmed = confirm('投稿したプロンプトを削除してもよろしいですか？');
         if(hasConfirmed){
             try {
                 await fetch(`/api/prompt/${post._id.toString()}`, {
@@ -40,7 +40,7 @@ const MyProfile = () => {
     return (
     <Profile
         name={session?.user.name}
-        desc='This should be implemented'
+        desc='過去の投稿が以下に表示されます。'
         data={posts}
         handleEdit={handleEdit}
         handleDelete={handleDelete}

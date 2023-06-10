@@ -52,7 +52,7 @@ const EditPrompt = () => {
     }
   return (
     <Form
-    type='Edit'
+    type='編集'
     post={post}
     setPost={setPost}
     submitting={submitting}
