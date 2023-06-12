@@ -25,7 +25,7 @@ const Nav = () => {
             width={30}
             height={30}
             src='/assets/images/logo.svg' />
-            <p className='logo_text'>Prompt Master</p>
+            <p className='logo_text'>Prompts Master</p>
         </Link>
 
         {/* Desktop Navigation */}
