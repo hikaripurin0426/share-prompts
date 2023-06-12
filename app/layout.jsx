@@ -2,8 +2,8 @@ import '@styles/globals.css';
 import Nav from '@components/Nav';
 import Provider from '@components/Provider';
 export const metadata = {
-    title: "Promptopia",
-    description: "Discover & Share AI Prompts"
+    title: "Prompts Master",
+    description: "Prompts MasterはChat-GPTなどのAIに渡す命令文（プロンプト）を共有するためのプラットフォームです。みんなが発見した便利なプロンプトをシェアして、最新AIを使いこなそう！"
 }
 const RootLayout = ({children}) => {
   return (
